@@ -9,8 +9,8 @@ For example, both “tomato late blight” and “potato late blight” should b
 ## Model
 
 Backbone: EfficientNet-B0  
-Classes: 39 (disease-only)  
-Input size: 288x288  
+Classes` 39 (disease-only)  
+Input size`   288x288  
 
 ---
 
@@ -19,15 +19,15 @@ Input size: 288x288
 ~0.88 mAP on validation set  
 ~0.86 mAP on test set  
 
-Note: slightly higher (~0.89) was observed earlier before fixing the validation split.
+Note:I noticed slightly higher mAP score (~0.89) earlier before fixing the validation split. By fixing i mean from the training set i took about 700 images and made validation set, then used the original val set as final test
 
 ---
 
 ## Files
 
-clean39_effb0_50ep_best.pth — trained model  
+cmodel_best.pth — trained model  
 class_mapping.json — class index mapping  
-clean39_effb0_50ep_results.json — evaluation results  
+results.json — evaluation results  
 main.py — API for inference  
 
 ---
