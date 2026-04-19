@@ -47,7 +47,7 @@ def predict_pil_image(image: Image.Image):
     with torch.no_grad():
         outputs1 = model(x)
 
-        flipped_img = image.transpose(Image.FLIP_LEFT_RIGHT)
+        flipped_img = image.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
         x_flip = transform(flipped_img).unsqueeze(0).to(device)
         outputs2 = model(x_flip)
 
