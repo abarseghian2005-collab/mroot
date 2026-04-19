@@ -1,0 +1,10 @@
+{
+    "model": "efficientnet_b0",
+    "dataset": "clean39_split",
+    "epochs": 50,
+    "best_val_map": 0.8775,
+    "test_map": 0.8612,
+    "test_map_tta": 0.8645,
+    "test_acc": 0.7795,
+    "test_acc_tta": 0.7923
+}
