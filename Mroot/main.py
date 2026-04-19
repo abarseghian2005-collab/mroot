@@ -6,9 +6,12 @@ import json
 import torch
 import timm
 import torchvision.transforms as transforms
+import os
 
-MODEL_PATH = "/kaggle/input/models/armenbars/clean39-effb0-final-completee/pytorch/default/1/clean39_effb0_50ep_best.pth"
-MAPPING_PATH = "/kaggle/input/models/armenbars/clean39-effb0-final-completee/pytorch/default/1/class_mapping (1).json"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+MODEL_PATH = os.path.join(BASE_DIR, "clean39_effb0_50ep_best.pth")
+MAPPING_PATH = os.path.join(BASE_DIR, "class_mapping.json")
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
