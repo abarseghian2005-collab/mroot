@@ -68,10 +68,6 @@ https://wandb.ai/abarseghian2005-yerevan-state-university-ysu/plant-disease-clas
 Model weights:
 https://huggingface.co/Armennnn/mroot-plant-disease-classification
 
-Live API:
-https://mroot.onrender.com/docs
-
----
 
 ## How to run locally
 
@@ -89,17 +85,6 @@ http://127.0.0.1:8000/docs
 
 ---
 
-## Deployed API
-
-Swagger / OpenAPI docs:
-https://mroot.onrender.com/docs
-
-Root endpoint:
-https://mroot.onrender.com/
-
-Note: the deployed API uses Render free tier, so the first request may take some time if the service is waking up.
-
----
 
 ## API
 
